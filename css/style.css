@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+:root {
+    --color-white    : #fff;
+    --color-black    : #000;
+    --color-primary  : #D966BA;
+    --color-secondary: #A6498D;
+    --color-bg       : #8C3B70;
+    --color-bg1      : #732C53;
+    --color-bg2      : #bc4e9c;
+}
+
+* {
+    box-sizing     : border-box;
+    padding        : 0;
+    margin         : 0;
+    outline        : 0;
+    border         : 0;
+    list-style     : none;
+    text-decoration: none;
+}
+
+html {
+    font-size         : 62.5%;
+    overflow-x        : hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior   : smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+
+/* Header */
+
+header {
+    width                : 100%;
+    height               : 700px;
+    background           : var(--color-bg2);
+    /* fallback for old browsers */
+    background           : -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/banner.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background           : linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/banner.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size      : cover;
+    background-attachment: fixed;
+    position             : relative;
+}
+
+header button {
+    display   : none;
+    margin-top: 1rem;
+}
+
+header .text-header {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    width          : 100%;
+    height         : 27rem;
+    color          : var(--color-white);
+    gap            : 2rem;
+    text-align     : center;
+}
+
+.container-nav {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.container-nav .navbar {
+    display: flex;
+    gap    : 4rem;
+}
+
+.container-nav .navbar a {
+    margin     : 2rem 0;
+    color      : var(--color-white);
+    font-size  : 1.7rem;
+    font-weight: 300;
+}
+
+.container-nav .navbar a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display    : inline-block;
+    padding    : .6rem 1.5rem;
+    border     : 1px solid var(--color-white);
+    font-weight: 400;
+    color      : var(--color-white);
+    font-size  : 1.5rem;
+}
+
+.btn:hover {
+    background: var(--color-bg1);
+}
+
+/*Efecto wave (ola)*/
+
+.wave {
+    position: absolute;
+    bottom  : 0;
+    width   : 100%;
+}
