@@ -393,6 +393,10 @@ line-height: 2;
         background: var(--color-bg1);
     }
 
+    .faqs-container{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
