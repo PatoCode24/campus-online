@@ -239,6 +239,46 @@ nav h3 {
     font-size: 1.5rem;
 }
 
+/*FAQS*/
+
+.faqs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-secondary);
+    cursor: pointer;
+}
+
+.faq h4{
+    color: var(--color-white);
+    font-size: 1rem;
+    line-height: 2.4;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    color: var(--color-white);
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+.faq-icon{
+    align-self: flex-start;
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
 
 /*FOOTER*/
 

@@ -21,3 +21,24 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+/*------------------------------------------------------------------------------*/ 
+
+//Show/Hide Faqs
+
+const faqs = document.querySelectorAll('.faq')
+
+faqs.forEach( faq =>{
+    faq.addEventListener('click', () =>{
+        faq.classList.toggle('open')
+
+        //Change icon
+        const icon = faq.querySelector('.faq-icon i')
+        if (icon.className === 'bi bi-plus'){
+            icon.className = 'bi bi-dash'
+        }else{
+            icon.className = 'bi bi-plus'
+        }
+    })
+})
+
