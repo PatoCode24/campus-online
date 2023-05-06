@@ -55,6 +55,47 @@ h6 {
     font-size     : 3rem;
 }
 
+/* Upload */
+
+.top{
+    display: none;
+}
+
+.bi-chevron-double-up {
+    color        : var(--color-white);
+    font-size    : 2rem;
+    font-weight  : 700;
+    background   : var(--color-bg2);
+    text-align   : center;
+    margin-left  : 3%;
+    padding      : .8rem;
+    border-radius: .3rem;
+    width        : 3.5rem;
+    height       : 3.5rem;
+    line-height  : 1;
+    position     : fixed;
+    bottom       : 20rem;
+    transition   : all .5s ease;
+    animation    : upload 3s infinite alternate;
+    cursor       : pointer;
+}
+
+.bi-chevron-double-up:hover {
+    background: var(--color-white);
+    color     : var(--color-bg2);
+}
+
+@keyframes upload {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+
 /* Whatsapp fixed */
 
 .boton-wsp i {
@@ -242,7 +283,7 @@ nav h3 {
 
 .container-courses {
     display        : flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap      : wrap;
     gap            : 1rem;
 }
@@ -281,7 +322,6 @@ nav h3 {
     background   : var(--color-white);
     padding      : .5rem;
     border-radius: .3rem;
-
 }
 
 .btn-course:hover {
