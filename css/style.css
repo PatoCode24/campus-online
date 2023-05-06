@@ -69,7 +69,7 @@ h6 {
     border-radius: 50%;
     line-height  : 1;
     background   : var(--color-bg2);
-    z-index: 10;
+    z-index      : 10;
 }
 
 .boton-wsp i:hover {
@@ -238,6 +238,58 @@ nav h3 {
     font-size: 1.5rem;
 }
 
+/* CURSOS */
+
+.container-courses {
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+    gap            : 1rem;
+}
+
+.box-courses {
+    width        : 23rem;
+    height       : 28.5rem;
+    border-radius: 1.5rem;
+    text-align   : center;
+    color        : var(--color-white);
+    background   : var(--color-bg2);
+    margin-bottom: 2rem;
+}
+
+.box-courses img {
+    width        : 100%;
+    height       : 15rem;
+    border-radius: 1.3rem 1.3rem 0 0;
+    margin-bottom: 1rem;
+}
+
+.box-courses h3 {
+    font-size    : 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.box-courses p {
+    font-size    : 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-course {
+    font-weight  : 400;
+    color        : var(--color-bg1);
+    font-size    : 1.5rem;
+    background   : var(--color-white);
+    padding      : .5rem;
+    border-radius: .3rem;
+
+}
+
+.btn-course:hover {
+    background: var(--color-bg1);
+    color     : var(--color-white);
+}
+
+
 /*NOSOTROS*/
 
 /*Docentes*/
@@ -348,7 +400,7 @@ nav h3 {
     padding   : 2rem;
     margin    : 3rem 0;
     position  : relative;
-    cursor: pointer;
+    cursor    : pointer;
 }
 
 .testimonial-body::before {
@@ -554,10 +606,10 @@ textarea {
     line-height: 2;
 }
 
-.footer .developed{
-    width: 20rem;
+.footer .developed {
+    width        : 20rem;
     border-radius: .5rem;
-    border: .3rem solid var(--color-white);
+    border       : .3rem solid var(--color-white);
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -727,9 +779,9 @@ textarea {
         margin-top           : 1.5rem;
     }
 
-    .footer ul{
+    .footer ul {
         flex-direction: row;
-        margin: 2rem 0;
+        margin        : 2rem 0;
     }
 
 }
