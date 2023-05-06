@@ -98,7 +98,11 @@ h6 {
 
 /* Whatsapp fixed */
 
-.boton-wsp i {
+.boton-wsp{
+    display: none;
+}
+
+.boton-wsp .bi-whatsapp {
     position     : fixed;
     text-align   : center;
     font-size    : 4.6rem;
@@ -113,7 +117,7 @@ h6 {
     z-index      : 10;
 }
 
-.boton-wsp i:hover {
+.boton-wsp .bi-whatsapp:hover {
     background-color: var(--color-bg1);
 }
 
