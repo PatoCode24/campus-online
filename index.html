@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Swipper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -104,7 +106,8 @@
         <!--Inicio cursos-->
         <section class="courses" id="courses">
             <h2 class="heading">Cursos</h2>
-            <div class="container-courses"  id="container-courses">
+            <div class="container-courses" id="container-courses" data-aos="fade-down" data-aos-easing="linear" data-aos-offset="500"
+                data-aos-duration="1500">
                 <!--Se rellena con js-->
             </div>
         </section>
@@ -429,7 +432,7 @@
             </div>
         </section>
         <!--Fin Contacto-->
-        <!-- WhatsApp flotante--> 
+        <!-- WhatsApp flotante-->
         <div class="boton-wsp">
             <a href="https://api.whatsapp.com/send?phone=114779865&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20"
                 target="_blank">
@@ -465,6 +468,11 @@
     <script src="./js/swiper.js"></script>
     <!--Scroll Top-->
     <script src="./js/upload.js"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
