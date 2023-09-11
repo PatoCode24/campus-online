@@ -55,63 +55,6 @@ h6 {
     font-size     : 3rem;
 }
 
-/* PRELOADER */
-
-#preloader {
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    width           : 100%;
-    height          : 100%;
-    background-color: black;
-    z-index         : 9999;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-}
-
-.loader {
-    width          : 100px;
-    height         : 100px;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    margin         : 10px 20px;
-}
-
-@keyframes load {
-    50% {
-        transform   : rotatez(180deg) scale(0.2);
-        border-color: orange;
-    }
-
-    100% {
-        transform: rotatez(360deg) scale(1.1);
-    }
-}
-
-@keyframes load9 {
-    50% {
-        transform: rotatez(180deg) scale(0.6);
-    }
-
-    100% {
-        transform: rotatez(360deg) scale(1);
-    }
-}
-
-.loader9::before {
-    content      : "";
-    color        : white;
-    height       : 50px;
-    width        : 50px;
-    background   : transparent;
-    border-radius: 50%;
-    border       : 20px dashed transparent;
-    border-color : #039BE5 indianred;
-    animation    : load9 .6s infinite ease-in-out;
-}
-
 
 /* Upload */
 
