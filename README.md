@@ -18,11 +18,6 @@
 * Formspree
 * AOS
 
----
----
-### Proyecto finalizado
-
-![Vista previa](./img/preview.gif)
 
 ---
 ---
